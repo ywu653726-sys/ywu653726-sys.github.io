@@ -133,7 +133,7 @@
             display: grid;
             grid-template-columns: 1.2fr 0.8fr;
             gap: 48px;
-            align-items: center;
+            align-items: start;
         }
 
         @media (max-width: 968px) {
@@ -274,7 +274,8 @@
         /* 右側個人卡片 Right Profile Card */
         .hero-right {
             display: flex;
-            justify-content: center;
+            flex-direction: column;
+            width: 100%;
         }
 
         .profile-card {
@@ -284,6 +285,9 @@
             border-radius: 20px;
             padding: 32px;
             box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
         }
 
         .card-header {
@@ -292,7 +296,6 @@
             gap: 16px;
             padding-bottom: 20px;
             border-bottom: 1px solid rgba(255, 255, 255, 0.08);
-            margin-bottom: 20px;
         }
 
         .card-avatar {
@@ -340,7 +343,6 @@
             display: flex;
             flex-direction: column;
             gap: 14px;
-            margin-bottom: 24px;
         }
 
         .info-item {
@@ -380,6 +382,7 @@
             align-items: center;
             font-size: 12px;
             color: #64748b;
+            width: 100%;
         }
 
         .card-footer-highlight {
@@ -468,6 +471,7 @@
                     </div>
                 </div>
 
+                <div class="info-list">
                     <div class="info-item">
                         <div class="info-icon">🎓</div>
                         <div class="info-text">
@@ -495,8 +499,8 @@
                             <strong>聯絡資訊：</strong>113022044@live.asia.edu.tw
                         </div>
                     </div>
-                
-                   <div class="info-item">
+
+                    <div class="info-item">
                         <div class="info-icon">✨</div>
                         <div class="info-text">
                             <strong>個人特質：</strong>MBTI 性格 ENFP（熱情開朗）
