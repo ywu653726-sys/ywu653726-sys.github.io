@@ -1,26 +1,93 @@
 <!DOCTYPE html>
-<html lang="zh-Hant">
+<html lang="zh-TW">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>我的個人網站 - 吳妍妍</title>
-    <link rel="stylesheet" href="./css/style.css">
+    <title>吳妍妍 | 個人網站</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: 'PingFang TC', 'Microsoft JhengHei', sans-serif;
+            background-color: #0b0f19;
+            color: #e2e8f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+        .container {
+            max-width: 700px;
+            width: 100%;
+            background: #161e2e;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 16px;
+            padding: 40px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+        }
+        .header {
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            padding-bottom: 20px;
+            margin-bottom: 24px;
+        }
+        .badge {
+            display: inline-block;
+            background: #2563eb;
+            color: #ffffff;
+            font-size: 14px;
+            padding: 4px 12px;
+            border-radius: 20px;
+            margin-bottom: 12px;
+        }
+        h1 {
+            font-size: 32px;
+            color: #ffffff;
+            margin-bottom: 8px;
+        }
+        .subtitle {
+            color: #94a3b8;
+            font-size: 16px;
+        }
+        .section-title {
+            font-size: 20px;
+            color: #38bdf8;
+            margin-bottom: 12px;
+        }
+        .content {
+            line-height: 1.8;
+            color: #cbd5e1;
+            font-size: 16px;
+        }
+        footer {
+            margin-top: 32px;
+            text-align: center;
+            font-size: 14px;
+            color: #64748b;
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <h1>吳妍妍 </h1>
-        <p>學號 ：113022044</p>
-    </header>
-    <main>
-        <section>
-            <h2>自我介紹</h2>
-            <p>
-                大家好，我是目前就讀亞洲大學 AI 系三年級的吳妍妍，畢業於台中明道中學，性格較外向、熱情開朗（MBTI 是 ENFP）。平時的休閒興趣是聽音樂與打電動等等。此外，我也是一名新人業餘小說家，雖然作品還不多，但非常享受將靈感化為文字創作的樂趣。同時我也熱愛 K-POP，常將喜愛的偶像視為榜樣，激勵自己不斷努力、變得和他們一樣優秀！以上，就是我的自我介紹，謝謝大家!
+    <div class="container">
+        <div class="header">
+            <span class="badge">亞洲大學 AI 系</span>
+            <h1>吳妍妍</h1>
+            <p class="subtitle">學號：113022044</p>
+        </div>
+        
+        <div class="bio">
+            <h2 class="section-title">自我介紹</h2>
+            <p class="content">
+                大家好，我是目前就讀亞洲大學 AI 系三年級的吳妍妍，畢業於台中明道中學，性格較外向、熱情開朗（MBTI 是 ENFP）。平時的休閒興趣是聽音樂與打電動等。此外，我也是一名新人業餘小說家，雖然作品還不多，但非常享受將靈感化為文字創作的樂趣。同時我也熱愛 K-POP，常將喜愛的偶像視為榜樣，激勵自己不斷努力、變得和他們一樣優秀！以上，就是我的自我介紹，謝謝大家！
             </p>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2026 吳妍妍. All rights reserved.</p>
-    </footer>
+        </div>
+
+        <footer>
+            © 2026 吳妍妍. All rights reserved.
+        </footer>
+    </div>
 </body>
 </html>
